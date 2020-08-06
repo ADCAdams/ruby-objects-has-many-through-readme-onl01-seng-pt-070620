@@ -32,10 +32,8 @@ class Waiter
       if xmeal.tip > best_tip
         best_tip = xmeal.tip
         best_tipper = xmeal.customer
-
       end     #ends if
     end       #ends each 
-   
     best_tipper
   end
   
