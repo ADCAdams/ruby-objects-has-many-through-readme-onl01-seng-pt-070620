@@ -23,11 +23,16 @@ class Waiter
     Meal.all.select {|meal| meal.waiter == self }
   end
   
-  def waiters
+  def best_tipper
     x = meals
-    y = []
-    x.each {|xmeal| y << xmeal.waiter}
-    y 
+    best_tip = 0
+    x.each do |xmeal| 
+      if xmeal.tip > best_tip
+        best_tip = xmeal.tip
+        best_tipper = xmeal.customer
+      end     #ends if
+    end       #ends each 
+    best_tipper
   end
   
   
