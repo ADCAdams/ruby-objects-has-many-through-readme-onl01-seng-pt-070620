@@ -21,7 +21,11 @@ class Customer
   end
   
   def waiters
-    Meal.all.select {|meal| meal.customer == self }
+    x = Meal.all.select {|meal| meal.customer == self }
+    y = []
+    x.each {|xmeal| y << xmeal.waiter}
+    y 
+  end
   end
   
 end
