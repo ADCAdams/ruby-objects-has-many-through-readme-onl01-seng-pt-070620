@@ -27,6 +27,7 @@ class Waiter
   def best_tipper
     x = meals
     best_tip = 0
+    best_tipper = nil
     x.each do |xmeal| 
       if xmeal.tip > best_tip
         best_tip = xmeal.tip
