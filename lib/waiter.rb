@@ -1,3 +1,4 @@
+require 'pry'
 class Waiter
   
   attr_reader :age 
