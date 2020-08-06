@@ -26,6 +26,5 @@ class Customer
     x.each {|xmeal| y << xmeal.waiter}
     y 
   end
-  end
   
 end
